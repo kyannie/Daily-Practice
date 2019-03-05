@@ -114,4 +114,43 @@ while y > 0:
         print("Sad")
 print("Loop 2 End")
 
+a = "Anson"
+print(a[1]) #Output: n
+
+
+
+
+# ============ 5 March 2019 ===============
+numberArr = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
+print("Loop Start")
+for number in numberArr:
+    if len(number) % 2 == 0:
+        x = len(number)
+        while x > 0:
+            x = x-1
+            print(number[x])
+    else:
+        print(number)
+
+print("Loop End")
+
+
+sentence = "Lorem Iprum is rimply dummy text of the printing"
+arr = sentence.split(" ")
+i = 0
+while i < len(arr):
+    if len(arr[i]) >= i:
+        characters = list(arr[i])
+        for character in characters:
+            if character == "i":
+                print("*")
+            elif character == "r":
+                print("s")
+            else:
+                print(character)
+    else:
+        print(arr[i])
+    i = i+1
+
+
 
